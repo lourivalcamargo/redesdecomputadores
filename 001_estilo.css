@@ -1,0 +1,638 @@
+/* ESTILIZAÇÃO_CSS - BASICA */
+html
+{font-size: 19px;}
+
+body
+{
+    background-color:rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    min-width: 500px;
+    min-height: 530px;
+}
+
+/* ESTILIZAÇÃO_CSS - TAG PADRÕES */
+ul, li
+{
+    list-style: none;
+}
+h1
+{
+    font-family: sans-serif, monospace; 
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+    line-height: 1.5rem;
+}
+
+h2
+{
+    font-family: sans-serif, monospace; 
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    line-height: 1.5rem;
+}
+
+h3
+{
+    font-family: sans-serif, monospace; 
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    color:rgb(0, 0, 255);
+    line-height: 1.5rem;
+}
+
+h4
+{
+    font-family: sans-serif, monospace; 
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+    line-height: 1.2rem;
+}
+
+h5
+{
+    font-family: sans-serif, monospace; 
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    color:black;
+    line-height: 1.5rem;
+}
+
+p
+{
+    font-family: sans-serif, monospace; 
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    color:white;
+    line-height: 1.5rem;
+}
+
+#txt_bold
+{
+    font-family: sans-serif, monospace; 
+    font-style: normal;
+    font-weight: bold;
+}
+
+#txt_espaco
+{
+    font-family: sans-serif, monospace;
+    font-style: normal;
+    font-weight: normal;
+    color:black;
+}
+
+/*
+.cx_botoes
+{
+    display: block;
+    background-color: black;
+    padding-top: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 5vh;
+    min-height: 2rem;
+    text-align: center;
+}
+*/
+
+.bt_voltar
+{
+    display: inline-flex;
+    background-color:white;
+    border: 2px;
+    border-color:rgb(0, 0, 255);
+    border-style: dotted;
+    width: 30vw;
+    height: 5vh;
+    min-width: 30vw;
+    min-height: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+}
+.bt_espaco
+{
+    display: inline-flex;
+    background-color:black;
+    width: 15vw;
+    height: 5vh;
+    min-width: 15vw;
+    min-height: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bt_avancar
+{
+    display: inline-flex;
+    background-color:white;
+    border: 2px;
+    border-color:rgb(0, 0, 255);
+    border-style: dotted;
+    width: 30vw;
+    height: 5vh;
+    min-width: 30vw;
+    min-height: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.espaco_v
+{
+    display: inline-block;
+    width: 100vw;
+    height: 5vh;
+    min-height: 5vh;
+}
+
+/* CSS - RESPONSIVIDADE */
+@media (max-height: 520px), (max-width:550px)
+{
+    h1, h2, h3, h5, p {font-size: 0.80rem;}
+    h4, h6 {font-size: 0.7rem;}
+    h1, h2, h3, h4, h5, h6, p {line-height: 1.2rem;}
+}
+@media (min-width:900px)
+{
+    h1, h2, h3, h5, p {font-size: 1.3rem;}
+    .capa_bt_proximo
+        {
+        min-width: 250px;
+        min-height: 30px;
+        }    
+    h4, h6 {font-size: 1rem;}
+    h1, h2, h3, h4, h5, h6, p {line-height: 1.95rem;}
+}
+/* ESTILIZAÇÃO_CSS - index_001.html */
+
+.ind_cx_header
+{
+    display: block;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 22vh;
+    min-height: 6.5rem;
+    text-align: center;
+}
+
+.ind_cx_autor
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 15vh;
+    min-height: 2rem;
+    text-align: center;
+}
+
+.ind_cx_titulo
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 20vh;
+    min-height: 5rem;
+    text-align: center;
+}
+
+.ind_cx_footer
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 20vh;
+    min-height: 6.5rem;
+    text-align: center;
+}
+
+.ind_bt_proximo
+{
+    display: flex;
+    background-color:white;
+    border: 2px;
+    border-color:rgb(0, 0, 255);
+    border-style: dotted;
+    width: 30vw;
+    height: 5vh;
+    min-width: 10vh;
+    min-height: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+/* ESTILIZAÇÃO_CSS - 002_resumo.html */
+.res_cx_header
+{
+    display: block;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 2vh;
+    min-height: 2rem;    
+    text-align:left;
+}
+
+.res_cx_main
+{
+    display:block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 74vh;
+    min-height: 21rem;
+    text-align:justify;
+}
+
+.res_cx_botoes
+{
+    display: block;
+    padding-top: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 5vh;
+    min-height: 2rem;
+    text-align: center;
+}
+/*
+    Na página 002_resumo ainda temos .espaco_v {5vh}
+*/
+
+/* ESTILIZAÇÃO_CSS - 003_abstract.html */
+.abs_cx_autor
+{
+    display: block;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 20vh;
+    min-height: 6.5rem;
+    text-align:justify;
+}
+
+.abs_cx_titulo
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 5vh;
+    min-height: 1.5rem;
+    text-align: left;
+}
+
+.abs_cx_main
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 55vh;
+    min-height: 17.25rem;
+    text-align:justify;
+}
+
+.abs_cx_botoes
+{
+    display: block;
+    padding-top: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 5vh;
+    min-height: 2rem;
+    text-align: center;
+}
+/*
+    Na página 003_abstract ainda temos .espaco_v {5vh}
+*/
+
+/* ESTILIZAÇÃO_CSS - 004_sumario.html */
+.sum_cx_header
+{
+    display: block;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 17vh;
+    min-height: 2rem;    
+    text-align:center;
+}
+
+.sum_cx_introducao
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 15.5vh;
+    min-height: 1.5rem;
+    text-align:center;
+}
+
+.sum_cx_desenvolvimento
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 15.5vh;
+    min-height: 1.5rem;
+    text-align:center;
+}
+
+.sum_cx_conclusao
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 15.5vh;
+    min-height: 1.5rem;
+    text-align:center;
+}
+
+.sum_cx_referencia
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 15.5vh;
+    min-height: 1.5rem;
+    text-align:center;
+}
+
+.sum_cx_botoes
+{
+    display: block;
+    padding-top: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 5vh;
+    min-height: 2rem;
+    text-align: center;
+}
+/*
+    Na página 004_sumario ainda temos .espaco_v {5vh}
+*/
+
+/* ESTILIZAÇÃO_CSS - 005_introducao.html */
+.int_cx_header
+{
+    display: block;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 2vh;
+    min-height: 1.5rem;    
+    text-align:left;
+}
+
+.int_cx_main
+{
+    display:block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 75vh;
+    min-height: 26.5rem;
+    text-align:justify;
+}
+
+.int_cx_botoes
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 5vh;
+    min-height: 2rem;
+    text-align: center;
+}
+
+.int_cx_numerador
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 2vh;
+    min-height: 1.5rem;
+    text-align: right;
+    justify-content: right;
+}
+
+/* ESTILIZAÇÃO_CSS - 006_desenvolvimento.html */
+.des_cx_header
+{
+    display: block;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 2vh;
+    min-height: 1.5rem;    
+    text-align:left;
+}
+
+.des_cx_main
+{
+    display:block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 75vh;
+    min-height: 25rem;
+    text-align:justify;
+}
+
+.des_cx_botoes
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 5vh;
+    min-height: 2rem;
+    text-align: center;
+}
+
+.des_cx_numerador
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 2vh;
+    min-height: 1.5rem;
+    text-align: right;
+    justify-content: right;
+}
+
+/* ESTILIZAÇÃO_CSS - 007_conclusao.html */
+.con_cx_header
+{
+    display: block;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 2vh;
+    min-height: 1.5rem;    
+    text-align:left;
+}
+
+.con_cx_main
+{
+    display:block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 75vh;
+    min-height: 22rem;
+    text-align:justify;
+}
+
+.con_cx_botoes
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 5vh;
+    min-height: 2rem;
+    text-align: center;
+}
+
+.con_cx_numerador
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 2vh;
+    min-height: 1.5rem;
+    text-align: right;
+    justify-content: right;
+}
+
+/* ESTILIZAÇÃO_CSS - 008_referencias.html */
+.ref_cx_ref
+{
+    display:block;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 25vh;
+    min-height: 12rem;
+    text-align:justify;    
+}
+
+.ref_cx_notas
+{
+    display:block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 25vh;
+    min-height: 12rem;
+    text-align:justify;    
+}
+
+.ref_cx_botoes
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 5vh;
+    min-height: 2rem;
+    text-align: center;
+}
+
+.ref_cx_numerador
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 2vh;
+    min-height: 1.5rem;
+    text-align: right;
+    justify-content: right;
+}
+
+/* ESTILIZAÇÃO_CSS - 009_capa.html */
+.cap_cx_header
+{
+    display: block;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 20vh;
+    min-height: 7rem;    
+    text-align:center;
+}
+.cap_cx_logomarca
+{
+    display: block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 30vh;
+    min-width: 10rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cap_cx_footer
+{
+    display: block;
+    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 85vw;
+    height: 20vh;
+    min-height: 7rem;
+    text-align: center;
+}
+/*
+    Na página 009_capa ainda temos .espaco_v {5vh} e .cx_bt_inicio (5vh)
+*/

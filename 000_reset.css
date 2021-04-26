@@ -1,0 +1,12 @@
+/*css para tentar tirar o comportamento padrão dos browser e com isso buscar uma melhor compatibilidade*/
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html
+{
+    font-size: 19px
+}
